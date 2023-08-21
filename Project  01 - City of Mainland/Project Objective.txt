@@ -1,0 +1,21 @@
+The City of Mainland has been purchasing lots of bicycle products and parts across the world for its citizen usages. Each product is classified and track based on order date, delivery due date and shipment, as these are essential to provide the citizens the procurement information.
+
+The purchasing information is stored in Category, Product, ProductCategory, and PurchaseTrans tables.
+
+The Purchase Manager requires answers to the following questions:
+
+- Top 10 products ordered in each country on specific date with drill down summary of product detail including product category and net amount
+- List of suppliers that offer discount amount on purchased products filtered by Product Category
+
+- Geographical display of total product purchased by class categories drill down by Country, State province and City with summary drill down of product information and purchased amount.
+
+▪ Create KPI with Low, Medium, High indicator based on Net Purchase Amount with the following conditions:
+- If the Net Purchase Amount is less than CAD 10,000 then “Low”
+- If the Net Purchase Amount between CAD 10,000 and CAD 20,000 then “Medium”
+- If the Net Purchase Amount greater than CAD 20,000 then “HIGH”
+
+The following measeres were used:
+
+Purchase Amount = UnitPrice * OrderQty
+Discount Amount = UnitPriceDiscount * Purchase Amount
+Net Purchase Amount = Purchase Amount – Discount Amount
